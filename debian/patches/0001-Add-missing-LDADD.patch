@@ -1,0 +1,38 @@
+From: =?utf-8?b?IkNoYW5nWmh1byBDaGVuICjpmbPmmIzlgKwpIg==?=
+ <czchen@debian.org>
+Date: Fri, 4 Aug 2017 03:47:21 -0400
+Subject: Add missing LDADD
+
+---
+ tests/Makefile.am | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+
+diff --git a/tests/Makefile.am b/tests/Makefile.am
+index de08cef..f566bd4 100644
+--- a/tests/Makefile.am
++++ b/tests/Makefile.am
+@@ -40,20 +40,20 @@ noinst_PROGRAMS         = test_pinyin \
+ 
+ test_pinyin_SOURCES	= test_pinyin.cpp
+ 
+-test_pinyin_LDADD   = ../src/libpinyin.la
++test_pinyin_LDADD   = ../src/libpinyin.la ${LDADD}
+ 
+ test_phrase_SOURCES	= test_phrase.cpp
+ 
+-test_phrase_LDADD   = ../src/libpinyin.la
++test_phrase_LDADD   = ../src/libpinyin.la ${LDADD}
+ 
+ test_chewing_SOURCES	= test_chewing.cpp
+ 
+-test_chewing_LDADD      = ../src/libpinyin.la
++test_chewing_LDADD      = ../src/libpinyin.la ${LDADD}
+ 
+ if ENABLE_LIBZHUYIN
+ noinst_PROGRAMS         += test_zhuyin
+ 
+ test_zhuyin_SOURCES = test_zhuyin.cpp
+ 
+-test_zhuyin_LDADD   = ../src/libzhuyin.la
++test_zhuyin_LDADD   = ../src/libzhuyin.la ${LDADD}
+ endif

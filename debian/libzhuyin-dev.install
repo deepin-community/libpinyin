@@ -1,0 +1,5 @@
+usr/include/*/zhuyin.h
+usr/include/*/zhuyin_custom2.h
+usr/lib/*/libzhuyin.a
+usr/lib/*/libzhuyin.so
+usr/lib/*/pkgconfig/libzhuyin.pc

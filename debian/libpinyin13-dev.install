@@ -1,0 +1,4 @@
+usr/include/*/pinyin.h
+usr/lib/*/libpinyin.a
+usr/lib/*/libpinyin.so
+usr/lib/*/pkgconfig/libpinyin.pc

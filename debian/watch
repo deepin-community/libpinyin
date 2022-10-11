@@ -1,0 +1,3 @@
+version=3
+https://sf.net/libpinyin/libpinyin-(\d\S*)\.(?:zip|tgz|tbz|txz|(?:tar\.(?:gz|bz2|xz)))
+

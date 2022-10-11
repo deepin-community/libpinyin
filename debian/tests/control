@@ -1,0 +1,5 @@
+tests: build
+Depends:
+ build-essential,
+ libpinyin-dev,
+ pkg-config,

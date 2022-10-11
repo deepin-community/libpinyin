@@ -1,0 +1,246 @@
+libpinyin (2.6.1-1) unstable; urgency=medium
+
+  * Team upload.
+  * debian/patches: Refresh patches.
+
+ -- Boyuan Yang <byang@debian.org>  Sat, 18 Sep 2021 19:55:13 -0400
+
+libpinyin (2.6.0-2) unstable; urgency=medium
+
+  * Team upload.
+  * Bump Standards-Version to 4.6.0 (no changes needed).
+  * debian/libpinyin13.symbols, debian/libzhuyin13.symbols:
+    Add Build-Depends-Package field as suggested by lintian.
+  * debian/rules: Explicitly select BerkeleyDB as DBM. This allows
+    future switch of DBM used by libpinyin (see #993415).
+
+ -- Boyuan Yang <byang@debian.org>  Sun, 05 Sep 2021 18:07:23 -0400
+
+libpinyin (2.6.0-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Bump debhelper compat to v13.
+  * Bump Standards-Version to 4.5.1.
+  * debian/libzhuyin13.symbols: Refresh symbols.
+
+ -- Boyuan Yang <byang@debian.org>  Sat, 26 Dec 2020 15:40:13 -0500
+
+libpinyin (2.3.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Bump Standards-Version to 4.4.0.
+  * Bump compat to 12.
+  * Remove dbgsym-migration.
+
+ -- ChangZhuo Chen (陳昌倬) <czchen@debian.org>  Mon, 22 Jul 2019 01:34:04 +0800
+
+libpinyin (2.2.2-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Bump Standards-Version to 4.3.0.
+
+ -- ChangZhuo Chen (陳昌倬) <czchen@debian.org>  Wed, 06 Feb 2019 16:15:44 +0800
+
+libpinyin (2.2.1-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Ondřej Nový ]
+  * d/watch: Use https protocol
+
+  [ Boyuan Yang ]
+  * New upstream version 2.2.1.
+  * debian: Apply "wrap-and-sort -abst".
+  * debian/control: Update uploaders' email address and use the @debian.org one.
+  * debian/control: Bump Standards-Version to 4.2.1.
+  * debian/rules: Modernize and use --dbgsym-migration instead of
+    --ddeb-migration.
+
+ -- Boyuan Yang <byang@debian.org>  Mon, 22 Oct 2018 22:17:40 -0400
+
+libpinyin (2.2.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Bump Standards-Version to 4.1.4.
+  * Update Maintainer name.
+  * Change libpinyin-common-dev Architecture to all.
+
+ -- ChangZhuo Chen (陳昌倬) <czchen@debian.org>  Wed, 02 May 2018 00:23:22 +0800
+
+libpinyin (2.1.91-1) unstable; urgency=medium
+
+  * Merge back to unstable.
+
+ -- ChangZhuo Chen (陳昌倬) <czchen@debian.org>  Wed, 31 Jan 2018 19:10:11 +0800
+
+libpinyin (2.1.91-1~exp1) experimental; urgency=medium
+
+  * New upstream release.
+  * Bump Standards-Version to 4.1.3.
+  * Bump compat to 11.
+  * Update Vcs-* fields to salsa.debian.org.
+  * Update Homepage and Source.
+
+ -- ChangZhuo Chen (陳昌倬) <czchen@debian.org>  Sun, 28 Jan 2018 19:58:57 +0800
+
+libpinyin (2.1.0-1~exp3) experimental; urgency=medium
+
+  * Specific libpinyin-common-dev version in libpinyin13-dev, libzhuyin-dev
+    Depends to avoid broken header files.
+
+ -- ChangZhuo Chen (陳昌倬) <czchen@debian.org>  Sun, 17 Sep 2017 18:34:29 +0800
+
+libpinyin (2.1.0-1~exp2) experimental; urgency=medium
+
+  * Fix missing header pinyin_custom2.h in libzhuyin-dev.
+
+ -- ChangZhuo Chen (陳昌倬) <czchen@debian.org>  Sat, 16 Sep 2017 11:36:50 +0800
+
+libpinyin (2.1.0-1~exp1) experimental; urgency=medium
+
+  * New upstream release.
+  * Bump SO version to 13.
+  * Add Breaks/Replaces in libpinyin-data for data transferred from libpinyin7
+    to libpinyin-data (Closes: #874423).
+
+ -- ChangZhuo Chen (陳昌倬) <czchen@debian.org>  Wed, 06 Sep 2017 18:41:11 +0800
+
+libpinyin (2.0.92-1~exp1) experimental; urgency=medium
+
+  * New upstream release.
+  * Bump Standards-Version to 4.0.0.
+  * Bump compat to 10.
+    * Remove unused Build-Depends.
+    * Remove --with autoreconf since it is default now.
+    * Remove --parallel since it is default now.
+    * Use dh_missing.
+  * Bump SO version to 12.
+  * Enable libzhuyin support.
+  * Update Vcs-* fields.
+  * Use copyright-format 1.0.
+  * Migrate to use libpinyin-dbgsym instead of libpinyin-dbg.
+  * Use harden build.
+
+ -- ChangZhuo Chen (陳昌倬) <czchen@debian.org>  Fri, 04 Aug 2017 03:51:35 -0400
+
+libpinyin (1.3.0-3) unstable; urgency=medium
+
+  * Add the libglib2.0-dev missing dependency to libpinyin7-dev
+    Thanks to Łukasz 'sil2100' Zemczak
+
+ -- Aron Xu <aron@debian.org>  Thu, 01 Dec 2016 20:46:21 +0800
+
+libpinyin (1.3.0-2) unstable; urgency=medium
+
+  * Upload to unstable
+
+ -- Aron Xu <aron@debian.org>  Wed, 16 Dec 2015 14:08:16 +0800
+
+libpinyin (1.3.0-1) experimental; urgency=medium
+
+  * New upstream release
+
+ -- Aron Xu <aron@debian.org>  Mon, 14 Dec 2015 23:24:55 +0800
+
+libpinyin (1.2.0-1) experimental; urgency=medium
+
+  * New upstream release.
+  * Change so version to 6.
+
+ -- ChangZhuo Chen (陳昌倬) <czchen@debian.org>  Thu, 15 Oct 2015 17:03:07 +0800
+
+libpinyin (1.1.0-1) experimental; urgency=medium
+
+  * New upstream release.
+  * Bump Standards-Version to 3.9.6
+  * Change so version to 5
+  * Fix Vcs-Browser
+  * Update watch to SourceForge
+  * Add autopkgtest
+
+ -- ChangZhuo Chen (陳昌倬) <czchen@debian.org>  Sat, 19 Sep 2015 12:58:40 +0800
+
+libpinyin (1.0.0+repack2-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Aron Xu <aron@debian.org>  Sun, 06 Jul 2014 03:03:51 +0800
+
+libpinyin (0.9.93+repack1-1) unstable; urgency=low
+
+  * Upload to unstable.
+
+ -- Aron Xu <aron@debian.org>  Mon, 30 Sep 2013 19:59:38 +0800
+
+libpinyin (0.9.93+repack1-0exp2) experimental; urgency=low
+
+  * Team upload.
+  * Update Breaks/Replaces (Closes: #723958)
+
+ -- Aron Xu <happyaron.xu@gmail.com>  Mon, 23 Sep 2013 01:15:49 +0800
+
+libpinyin (0.9.93+repack1-0exp1) experimental; urgency=low
+
+  * Team upload.
+  * New upstream release.
+
+ -- Aron Xu <aron@debian.org>  Fri, 20 Sep 2013 00:40:15 +0800
+
+libpinyin (0.8.0-2) unstable; urgency=low
+
+  * Bump standard version to 3.9.4: no modification needed.
+  * Remove DMUA tag.
+  * Upload to unstable.
+  * Add symbols for libpinyin2.
+
+ -- YunQiang Su <wzssyqa@gmail.com>  Sat, 16 Feb 2013 13:08:01 +0800
+
+libpinyin (0.8.0-1) experimental; urgency=low
+
+  * New upstream release
+
+ -- Aron Xu <aron@debian.org>  Fri, 30 Nov 2012 21:46:09 +0800
+
+libpinyin (0.7.92-1) experimental; urgency=low
+
+  * New upstream release
+
+ -- Asias He <asias@debian.org>  Tue, 16 Oct 2012 19:40:17 +0800
+
+libpinyin (0.7.91-1) experimental; urgency=low
+
+  * New upstream release
+
+ -- Asias He <asias@debian.org>  Fri, 05 Oct 2012 21:42:29 +0800
+
+libpinyin (0.7.0-2) experimental; urgency=low
+
+  * Add Breaks/Replaces entry for libpinyin0 (Closes: #684032).
+
+ -- Aron Xu <aron@debian.org>  Wed, 08 Aug 2012 16:53:44 +0000
+
+libpinyin (0.7.0-1) experimental; urgency=low
+
+  * New upstream release
+  * Rename to libpinyin2, because upstream SONAME bump.
+  * Remove 0002-fixes_test_flexible_ngram.cpp_kfreebsd_build.patch,
+    applied upstream.
+  * Remove README.Debian, not needed anymore.
+
+ -- Aron Xu <aron@debian.org>  Sun, 29 Jul 2012 23:34:56 +0800
+
+libpinyin (0.6.91-1) unstable; urgency=low
+
+  * Imported Upstream version 0.6.91
+  * Add upstream patch:
+    - fixes test_flexible_ngram.cpp
+    - fixes kfreebsd build
+
+ -- YunQiang Su <wzssyqa@gmail.com>  Sat, 26 May 2012 09:43:35 +0800
+
+libpinyin (0.5.92-1) unstable; urgency=low
+
+  * Initial release (Closes: #658144)
+
+ -- Aron Xu <aron@debian.org>  Fri, 04 May 2012 01:35:31 +0800

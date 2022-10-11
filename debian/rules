@@ -1,0 +1,19 @@
+#!/usr/bin/make -f
+
+include /usr/share/dpkg/architecture.mk
+
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+
+%:
+	dh $@
+
+override_dh_auto_configure:
+	dh_auto_configure -Sautoconf -- \
+	    --libdir=\$${prefix}/lib/$(DEB_HOST_MULTIARCH) \
+	    --datarootdir=\$${prefix}/lib/$(DEB_HOST_MULTIARCH) \
+	    --with-dbm=BerkeleyDB \
+	    --enable-libzhuyin \
+	    $(NULL)
+
+execute_before_dh_install:
+	find debian/ -name *.la -delete
